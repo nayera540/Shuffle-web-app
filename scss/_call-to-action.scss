@@ -1,0 +1,32 @@
+.call-to-action{
+    background-image: url('../assets/images/cta-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: 50% 50%;
+    background-color: color-mix(in srgb, #0e1a18, transparent 50%);
+    background-blend-mode: multiply; 
+}
+
+.call-to-action--content{
+    text-align: center;
+    .call-to-action--title{
+        color: #fff;
+    }
+    .call-to-action--description{
+        color: #fff;
+        margin-bottom: 2.3rem;
+    }
+    a{
+        @include button(
+            $margin: 0.625rem,
+            $paddingX: 2.5rem,
+            $paddingY: 0.75rem,
+            $border: 2px solid $primaryColor,
+            $bgColor: transparent,
+            $borderRadius: $roundedPill,
+            $fontFamily: $defaultFont
+        );
+        @include btn-hover($primaryColor);
+    }
+}

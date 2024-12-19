@@ -1,0 +1,59 @@
+.carousel-item{
+    position: relative;
+    &::before{
+        content: "";
+        background: $overlay;
+        position: absolute;
+        inset: 0;
+    }
+
+    img{
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .carousel-container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        .carousel-container--title{
+            font-size: 3rem;
+            color: #fff;
+            font-weight: $headingFont;
+            margin-bottom: 1.875rem;
+        }
+        .carousel-container--description{
+            color: #fff;
+        }
+        .carousel-container--link{
+            font-size: 0.938rem;
+
+            @include button(
+                $margin: 0.625rem,
+                $paddingX: 2rem,
+                $paddingY: 0.5rem,
+                $bgColor: $primaryColor,
+                $borderRadius: $roundedPill,
+                $fontFamily: $headingFont,
+                $letterSpacing: 1px,
+                $fontWeight: $btnFontWeight,
+            );
+
+            @include btn-hover($primaryColorHover);
+        }
+        
+    }
+
+}
+
+.carousel-control-prev, .carousel-control-next{
+    width: 5% !important;
+}

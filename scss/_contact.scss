@@ -1,0 +1,51 @@
+.contact-item, .contact-form{
+    padding: 1.875rem;
+}
+
+.contact-item{
+    i{
+        font-size: 2.375rem;
+        color: $primaryColor;
+    }
+
+    h3{
+        font-size: 1.25rem;
+        margin-top: 1.25rem;
+        margin-bottom: 0.625rem;
+    }
+
+    p{
+        margin-bottom: 0;
+        font-size: 0.875rem;
+    }
+}
+
+.contact-form{
+    input, textarea{
+        width: 100%;
+        padding: 0.625rem 0.938rem;
+        font-size: 0.9rem;
+        outline: none;
+        border-width: 1px;
+        border-color: color-mix(in srgb, #444444, transparent 80%);
+        transition: 0.3s ease;
+    }
+    input::placeholder,textarea::placeholder{
+        color: #c4c9ce;
+    } 
+    input:focus, textarea:focus{
+        border: 1px solid $primaryColor;
+    }
+
+    button{ 
+        @include button(
+            $borderRadius: 4px,
+            $paddingY: 0.625rem,
+            $paddingX: 1.875rem,
+            $bgColor: $primaryColor,
+            $fontFamily: $defaultFont
+        );
+
+        @include btn-hover($primaryColorHover);
+    }
+}

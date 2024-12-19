@@ -1,0 +1,101 @@
+.portfolio-filters{
+    list-style: none;
+    margin-bottom: 1.25rem;
+    
+    li{
+        margin: 0 0.625rem 0.313rem 0.625rem;
+        font-size: 1.125rem;
+        font-weight: $btnFontWeight;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    li:hover{
+        color: $primaryColor;
+    }
+    li:first-child{
+        color: $primaryColor;
+    }
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+
+    .img-container {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .item-overlay {
+        opacity: 0;
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.384);
+        padding: 15px;
+        transition: opacity 0.5s ease;
+        z-index: 2;
+        color: #fff;
+
+        .badge{
+            top: 15px;
+            left: 15px;
+            background-color: $primaryColor;
+            border-radius: 0;
+            padding: 0.5rem 0.6rem;
+            font-size: 0.89rem;
+            font-family: $headingFont;
+            font-weight: $defaultFontWeight;
+        }
+
+        p{
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            text-align: center; 
+            color: #fff;
+        }
+        .link-container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            gap: 10px;
+
+            a{
+                font-size: 1.625rem;
+                color: #fff;
+                line-height: 2px;
+                transition: 0.3s;
+            }
+            a:last-child{
+                font-size: 2.125rem;
+            }
+            a:hover{
+                color: $primaryColor;
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+
+    &:hover .img-container img {
+        transform: scale(1.1);
+    }
+
+    &:hover .item-overlay {
+        opacity: 1;
+    }
+}
+
+
+
+
+

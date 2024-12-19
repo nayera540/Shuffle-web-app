@@ -1,0 +1,23 @@
+@mixin button($borderRadius, $paddingY, $paddingX, $bgColor, $fontFamily: normal, $fontWeight: inherit, $margin: 0, $border: none, $letterSpacing: 0){
+    border-radius: $borderRadius;
+    border: none;
+    padding: $paddingY $paddingX;
+    color: #fff;
+    border: $border;
+    margin: $margin;
+    outline: none;
+    background-color: $bgColor;
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+    cursor: pointer;
+    letter-spacing: $letterSpacing;
+    transition: 0.3s ease;
+
+
+}
+
+@mixin btn-hover($bgHoverColor){
+    &:hover{
+        background-color: $bgHoverColor;
+    }
+}

@@ -1,0 +1,31 @@
+body {
+    font-size: 16px;
+    
+}
+
+p{
+    font-family: $defaultFont;
+    color: $defaultColor;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: $headingColor;
+    font-weight: $headingFontWeight;
+    font-family: $headingFont;
+}
+
+h3{
+    color: $headingColor;
+    font-weight: $headingFontWeight !important;
+    font-family: $headingFont;
+}
+
+.sitename {
+    font-size: 1.875rem;
+    font-weight: $headingFontWeight;
+    color: $headingColor;
+    font-family: $headingFont;
+}

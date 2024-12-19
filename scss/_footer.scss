@@ -1,0 +1,98 @@
+.footer{
+    padding-block: 3.125rem;
+    background-color: $footerPrimaryColor;
+
+    h4{
+        color: #fff;
+        font-size: 1rem;
+        font-family: $headingFont;
+        font-weight: $headingFontWeight;
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.75rem;
+    }
+
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            padding-block: 0.325rem;
+            a{
+                font-size: 0.875rem;
+                color: color-mix(in srgb, #fff, transparent 20%);
+                transition: 0.3s ease;
+            }
+
+            a:hover{
+                color: $primaryColor;
+            }
+        }
+    }
+}
+
+.footer-info{
+    h1, p{
+        color: #fff !important;
+    }
+
+    h1{
+        margin-bottom: 1.563rem !important;
+    }
+
+    p{
+        font-size: 0.875rem;
+    }
+
+    .links a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0.45rem;
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 50%;
+        transition: 0.3s ease;
+        border: 1px solid color-mix(in srgb, #fff , transparent 50%);
+        color: color-mix(in srgb, #fff , transparent 50%);
+    }
+    .links a:hover{
+        color: $primaryColor;
+        border-color: $primaryColor;
+    }
+}
+
+.footer-contact{
+    p{
+        color: #fff;
+        font-size: 0.875rem;
+        margin-bottom: 5px;
+    }
+
+    .contact-links{
+        margin-top: 1.5rem;
+    }
+}
+
+.footer-copyrights{
+    margin-top: 1.5rem;
+    background-color: $footerSecondaryColor;
+    text-align: center;
+    padding: 1.5rem 0.75rem;
+
+    p{
+        color: #fff;
+        font-size: 0.875rem;
+        padding: 0;
+        margin-bottom: 5px;
+    }
+    .credits{
+        font-size: 0.813rem;
+        a{
+            color: $primaryColor;
+            transition: 0.3s ease;
+        }
+        a:hover{
+            color: $primaryColorHover;
+        }
+    }
+}

@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shuffle</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./scss/main.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarTogglerDemo02" data-bs-offset="0" tabindex="0">
+    <header class="fixed-top header d-flex navbar align-items-center navbar-expand-lg py-3">
+        <div class="container-fluid container-lg d-flex justify-content-between align-items-center">
+            <a href="index.html" class="logo ">
+                <h1 class="sitename m-0">
+                    Shuffle
+                </h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-menu navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-item d-flex justify-content-between align-content-center" href="#">
+                                    Deep Dropdown
+                                    <i class="bi bi-chevron-down" style="font-size: 0.6rem; margin-left: 8px;"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-submenu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Deep Dropdown 1</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Deep Dropdown 2</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Deep Dropdown 3</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Deep Dropdown 4</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Deep Dropdown 5</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
+                            <li><a class="dropdown-item" href="#">Dropdown 3</a></li>
+                            <li><a class="dropdown-item" href="#">Dropdown 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero" id="hero">
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-interval="5000"
+                data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/images/hero-carousel-1.jpg" class="d-block w-100" alt="hero-carousel-1">
+                        <div class="carousel-container d-flex justify-content-center align-items-center flex-column">
+                            <h2 class="carousel-container--title">
+                                Welcome to Shuffle
+                            </h2>
+                            <p class="carousel-container--description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                            <a href="#contact" class="carousel-container--link">
+                                Get Started
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" carousel-item">
+                        <img src="./assets/images/hero-carousel-2.jpg" class="d-block w-100" alt="hero-carousel-2">
+                        <div class="carousel-container">
+                            <h2 class="carousel-container--title">
+                                At vero eos et accusamus
+                            </h2>
+                            <p class="carousel-container--description">
+                                Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus
+                                id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
+                                repellendus. Temporibus autem quibusdam et aut officiis debitis aut.
+                            </p>
+                            <a href="#contact" class="carousel-container--link">
+                                Get Started
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/hero-carousel-3.jpg" class="d-block w-100" alt="hero-carousel-3">
+                        <div class="carousel-container">
+                            <h2 class="carousel-container--title">
+                                Temporibus autem quibusdam
+                            </h2>
+                            <p class="carousel-container--description">
+                                Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                                voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.
+                            </p>
+                            <a href="#contact" class="carousel-container--link">
+                                Get Started
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+                <h2>
+                    About
+                </h2>
+                <p>
+                    Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                </p>
+            </div>
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-6 order-2 order-lg-1 aos-animate aos-init about-description" data-aos="fade-up"
+                        data-aos-delay="100">
+                        <h3>
+                            Voluptatem dignissimos provident quasi corporis
+                        </h3>
+                        <p class="fst-italic">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+                        <ul class="list-unstyled">
+                            <li>
+                                <i class="bi bi-check-circle"></i>
+                                Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle"></i>
+                                Duis aute irure dolor in reprehenderit in voluptate velit.
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle"></i>
+                                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
+                                pariatur.
+                            </li>
+                        </ul>
+                        <a href="#" class="read-more">
+                            Read More
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 aos-animate aos-init" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <img src="./assets/images/about.jpg" alt="" class="w-100" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="stats section bg-light" id="stats">
+            <div class="container aos-animate aos-init" data-aos="fade-up" data-aos-delay="100">
+                <div class="row stats-row gy-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item">
+                            <i class="bi bi-emoji-smile "></i>
+                            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+                                class="purecounter stats-counter">232</span>
+                            <p class="stats-description">
+                                <strong class="stats-title">Happy Clients</strong>
+                                <span class="stats-subtext">consequuntur quae</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item">
+                            <i class="bi bi-journal-richtext "></i>
+                            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
+                                class="purecounter stats-counter">521</span>
+                            <p class="stats-description">
+                                <strong class="stats-title">Projects</strong>
+                                <span class="stats-subtext">adipisci atque cum quia aut</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item">
+                            <i class="bi bi-headset "></i>
+                            <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1"
+                                class="purecounter stats-counter">1453</span>
+                            <p class="stats-description">
+                                <strong class="stats-title">Hours Of Support</strong>
+                                <span class="stats-subtext">aut commodi quaerat</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item">
+                            <i class="bi bi-people "></i>
+                            <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1"
+                                class="purecounter stats-counter">32</span>
+                            <p class="stats-description">
+                                <strong class="stats-title">Hard Workers</strong>
+                                <span class="stats-subtext">rerum asperiores dolor</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="services section" id="services">
+            <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+                <h2>
+                    Services
+                </h2>
+                <p>
+                    Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                </p>
+            </div>
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-3 col-md-6 aos-animate aos-init" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-item">
+                            <div class="icon">
+                                <i class="bi bi-activity"></i>
+                            </div>
+                            <h4 class="service-item--title">
+                                <a href="">
+                                    Lorem Ipsum
+                                </a>
+                            </h4>
+                            <p class="service-item--description">
+                                Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 aos-animate aos-init" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-item">
+                            <div class="icon">
+                                <i class="bi bi-bounding-box-circles"></i>
+                            </div>
+                            <h4 class="service-item--title">
+                                <a href="">
+                                    Sed ut perspici
+                                </a>
+                            </h4>
+                            <p class="service-item--description">
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 aos-animate aos-init" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-item">
+                            <div class="icon">
+                                <i class="bi bi-calendar4-week"></i>
+                            </div>
+                            <h4 class="service-item--title">
+                                <a href="">
+                                    Magni Dolores
+                                </a>
+                            </h4>
+                            <p class="service-item--description">
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 aos-animate aos-init" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-item">
+                            <div class="icon">
+                                <i class="bi bi-broadcast"></i>
+                            </div>
+                            <h4 class="service-item--title">
+                                <a href="">
+                                    Nemo Enim
+                                </a>
+                            </h4>
+                            <p class="service-item--description">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="call-to-action section" id="call-to-action">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="call-to-action--content aos-animate aos-init col-xl-10 h-100" data-aos="zoom-in"
+                        data-aos-delay="100">
+                        <h3 class="call-to-action--title">
+                            Call To Action
+                        </h3>
+                        <p class="call-to-action--description">
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.
+                        </p>
+                        <a href="" class="btn-ctan">
+                            Call To Action
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="more-services section" id="more-services">
+            <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+                <h2>
+                    More Services
+                </h2>
+                <p>
+                    Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                </p>
+            </div>
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-4  aos-animate aos-init" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card">
+                            <img src="./assets/images/more-service-1.jpg" class="img-fluid" alt="">
+                            <h3>
+                                Ad cupiditate sed est odio
+                            </h3>
+                            <p>
+                                Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4  aos-animate aos-init" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card">
+                            <img src="./assets/images/more-service-2.jpg" class="img-fluid" alt="">
+                            <h3>
+                                Voluptatem voluptatum alias
+                            </h3>
+                            <p>
+                                Repudiandae amet nihil natus in distinctio suscipit id. Doloremque ducimus ea sit non.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4  aos-animate aos-init" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card">
+                            <img src="./assets/images/more-service-3.jpg" class="img-fluid" alt="">
+                            <h3>
+                                Fugit cupiditate alias nobis.
+                            </h3>
+                            <p>
+                                Quam rem vitae est autem molestias explicabo debitis sint. Vero aliquid quidem commodi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio section" id="portfolio">
+            <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+                <h2>
+                    Portfolio
+                </h2>
+                <p>
+                    Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                </p>
+            </div>
+            <div class="container">
+                <ul class="portfolio-filters d-flex align-items-center justify-content-center aos-animate aos-init"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <li>All</li>
+                    <li>App</li>
+                    <li>Product</li>
+                    <li>Branding</li>
+                    <li>Books</li>
+                </ul>
+                <div class="row gy-4 portfolio-items d-flex justify-content-center aos-animate aos-init"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-lg-4 col-md-6 portfolio-item">
+                        <div class="img-container">
+                            <img src="./assets/images/app-1.jpg" alt="App 1" />
+                            <div class="item-overlay">
+                                <span class="position-absolute badge">App 1</span>
+                                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                                <div class="link-container">
+                                    <a href="">
+                                        <i class="bi bi-zoom-in"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="bi bi-link-45deg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item">
+                        <div class="img-container">
+                            <div class="img-container">
+                                <img src="./assets/images/product-1.jpg" alt="Product 1" />
+                                <div class="item-overlay">
+                                    <span class="position-absolute badge">Product 1</span>
+                                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                                    <div class="link-container">
+                                        <a href="">
+                                            <i class="bi bi-zoom-in"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="bi bi-link-45deg"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item">
+                        <div class="img-container">
+                            <div class="img-container">
+                                <img src="./assets/images/branding-1.jpg" alt="Branding 1" />
+                                <div class="item-overlay">
+                                    <span class="position-absolute badge">Branding 1</span>
+                                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                                    <div class="link-container">
+                                        <a href="">
+                                            <i class="bi bi-zoom-in"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="bi bi-link-45deg"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item">
+                        <div class="img-container">
+                            <div class="img-container">
+                                <img src="./assets/images/books-1.jpg" alt="Books 1" />
+                                <div class="item-overlay">
+                                    <span class="position-absolute badge">Books 1</span>
+                                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                                    <div class="link-container">
+                                        <a href="">
+                                            <i class="bi bi-zoom-in"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="bi bi-link-45deg"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item">
+                        <div class="img-container">
+                            <div class="img-container">
+                                <img src="./assets/images/app-2.jpg" alt="App 2" />
+                                <div class="item-overlay">
+                                    <span class="position-absolute badge">App 2</span>
+                                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                                    <div class="link-container">
+                                        <a href="">
+                                            <i class="bi bi-zoom-in"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="bi bi-link-45deg"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item">
+                        <div class="img-container">
+                            <div class="img-container">
+                                <img src="./assets/images/product-2.jpg" alt="Product 2" />
+                                <div class="item-overlay">
+                                    <span class="position-absolute badge">Product 2</span>
+                                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                                    <div class="link-container">
+                                        <a href="">
+                                            <i class="bi bi-zoom-in"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="bi bi-link-45deg"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item">
+                        <div class="img-container">
+                            <div class="img-container">
+                                <img src="./assets/images/branding-2.jpg" alt="Branding 2" />
+                                <div class="item-overlay">
+                                    <span class="position-absolute badge">Branding 2</span>
+                                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                                    <div class="link-container">
+                                        <a href="">
+                                            <i class="bi bi-zoom-in"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="bi bi-link-45deg"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item">
+                        <div class="img-container">
+                            <div class="img-container">
+                                <img src="./assets/images/books-2.jpg" alt="Books 1" />
+                                <div class="item-overlay">
+                                    <span class="position-absolute badge">Books 2</span>
+                                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                                    <div class="link-container">
+                                        <a href="">
+                                            <i class="bi bi-zoom-in"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="bi bi-link-45deg"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item">
+                        <div class="img-container">
+                            <div class="img-container">
+                                <img src="./assets/images/app-3.jpg" alt="App 3" />
+                                <div class="item-overlay">
+                                    <span class="position-absolute badge">App 3</span>
+                                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                                    <div class="link-container">
+                                        <a href="">
+                                            <i class="bi bi-zoom-in"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="bi bi-link-45deg"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item">
+                        <div class="img-container">
+                            <div class="img-container">
+                                <img src="./assets/images/product-3.jpg" alt="Product 3" />
+                                <div class="item-overlay">
+                                    <span class="position-absolute badge">Product 3</span>
+                                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                                    <div class="link-container">
+                                        <a href="">
+                                            <i class="bi bi-zoom-in"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="bi bi-link-45deg"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item">
+                        <div class="img-container">
+                            <div class="img-container">
+                                <img src="./assets/images/branding-3.jpg" alt="Branding 3" />
+                                <div class="item-overlay">
+                                    <span class="position-absolute badge">Branding 3</span>
+                                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                                    <div class="link-container">
+                                        <a href="">
+                                            <i class="bi bi-zoom-in"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="bi bi-link-45deg"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item">
+                        <div class="img-container">
+                            <div class="img-container">
+                                <img src="./assets/images/books-3.jpg" alt="Books 3" />
+                                <div class="item-overlay">
+                                    <span class="position-absolute badge">Books 3</span>
+                                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                                    <div class="link-container">
+                                        <a href="">
+                                            <i class="bi bi-zoom-in"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="bi bi-link-45deg"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team section" id="team">
+            <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+                <h2>
+                    Team
+                </h2>
+                <p>
+                    Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                </p>
+            </div>
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-3 col-md-6 team-member aos-animate aos-init" data-aos="fade-up"
+                        data-aos-delay="100">
+                        <div class="member-info">
+                            <img src="./assets/images/team-1.jpg" alt="team member 1" class="img-fluid">
+                            <div class="team-overlay">
+                                <h4>Walter White</h4>
+                                <span>Chief Executive Officer</span>
+                                <div class="social-media-links">
+                                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 team-member aos-animate aos-init" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div class="member-info">
+                            <img src="./assets/images/team-2.jpg" alt="team member 2" class="img-fluid">
+                            <div class="team-overlay">
+                                <h4>Sarah Johnson</h4>
+                                <span>Product Manager</span>
+                                <div class="social-media-links">
+                                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 team-member aos-animate aos-init" data-aos="fade-up"
+                        data-aos-delay="300">
+                        <div class="member-info">
+                            <img src="./assets/images/team-3.jpg" alt="team member 3" class="img-fluid">
+                            <div class="team-overlay">
+                                <h4>William Anderson</h4>
+                                <span>CTO</span>
+                                <div class="social-media-links">
+                                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 team-member aos-animate aos-init" data-aos="fade-up"
+                        data-aos-delay="400">
+                        <div class="member-info">
+                            <img src="./assets/images/team-4.jpg" alt="team member 4" class="img-fluid">
+                            <div class="team-overlay">
+                                <h4>Amanda Jepson</h4>
+                                <span>Accountant</span>
+                                <div class="social-media-links">
+                                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="faq section bg-light" id="faq">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-4 aos-animate aos-init" data-aos="fade-up" data-aos-delay="100">
+                        <div class="faq-content px-5">
+                            <h3>
+                                Frequently Asked <strong>Questions</strong>
+                            </h3>
+                            <p class="text-secondary">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 aos-animate aos-init" data-aos="fade-up" data-aos-delay="200">
+                        <div class="accordion accordion-flush" id="accordionPanels">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="panelsStayOpen-headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseOne">
+                                        <span class="accordion-num">1.</span>
+                                        <span class="question">
+                                            Non consectetur a erat nam at lectus urna duis?
+                                        </span>
+
+                                    </button>
+                                </h3>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="panelsStayOpen-headingOne">
+                                    <div class="accordion-body">
+                                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
+                                        laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor
+                                        rhoncus dolor purus non.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseTwo">
+                                        <span class="accordion-num">2.</span>
+                                        <span class="question">
+                                            Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+                                        </span>
+
+                                    </button>
+                                </h3>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingTwo">
+                                    <div class="accordion-body">
+                                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
+                                        interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
+                                        scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
+                                        Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="panelsStayOpen-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseThree">
+                                        <span class="accordion-num">3.</span>
+                                        <span class="question">
+                                            Dolor sit amet consectetur adipiscing elit pellentesque?
+                                        </span>
+
+                                    </button>
+                                </h3>
+                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingThree">
+                                    <div class="accordion-body">
+                                        Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci.
+                                        Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl
+                                        suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis
+                                        convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="panelsStayOpen-headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseFour">
+                                        <span class="accordion-num">4.</span>
+                                        <span class="question">
+                                            Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                                        </span>
+
+                                    </button>
+                                </h3>
+                                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingFour">
+                                    <div class="accordion-body">
+                                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
+                                        interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
+                                        scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
+                                        Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="panelsStayOpen-headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseFive">
+                                        <span class="accordion-num">5.</span>
+                                        <span class="question">
+                                            Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+                                        </span>
+
+                                    </button>
+                                </h3>
+                                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingFive">
+                                    <div class="accordion-body">
+                                        Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim
+                                        suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan.
+                                        Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit
+                                        turpis cursus in
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact section" id="contact">
+            <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+                <h2>
+                    Contact
+                </h2>
+                <p>
+                    Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                </p>
+            </div>
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                        <div class="row gy-4">
+                            <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                                <div class="contact-item bg-light">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <h3>
+                                        Address
+                                    </h3>
+                                    <p>
+                                        A108 Adam Street
+                                    </p>
+                                    <p>
+                                        New York, NY 535022
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                                <div class="contact-item bg-light">
+                                    <i class="bi bi-telephone"></i>
+                                    <h3>
+                                        Call Us
+                                    </h3>
+                                    <p>
+                                        +1 5589 55488 55
+                                    </p>
+                                    <p>
+                                        +1 6678 254445 41
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                                <div class="contact-item bg-light">
+                                    <i class="bi bi-envelope"></i>
+                                    <h3>
+                                        Email Us
+                                    </h3>
+                                    <p>
+                                        info@example.com
+                                    </p>
+                                    <p>
+                                        contact@example.com
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+                                <div class="contact-item bg-light">
+                                    <i class="bi bi-clock"></i>
+                                    <h3>
+                                        Open Hours
+                                    </h3>
+                                    <p>
+                                        Monday - Friday
+                                    </p>
+                                    <p>
+                                        9:00AM - 05:00PM
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                        <form  class="bg-light contact-form">
+                            <div class="row gy-4">
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="Your Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="Your Email">
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" placeholder="Subject">
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="message" placeholder="Message" rows="6" id=""></textarea>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-nav">
+                <div class="row gy-4">
+                    <div class="col-lg-5 footer-info">
+                        <a href="index.html" class="logo">
+                            <h1 class="sitename m-0">
+                                Shuffle
+                            </h1>
+                        </a>
+                        <p>
+                            Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna
+                            derita valies darta donna mare fermentum iaculis eu non diam phasellus.
+                        </p>
+                        <div class="links d-flex justify-content-start">
+                            <a href="">
+                                <i class="bi bi-twitter-x"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-6 footer-links">
+                        <h4>
+                            Useful Links
+                        </h4>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">About us</a>
+                            </li>
+                            <li>
+                                <a href="">Services</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Terms of service
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Privacy policy
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-6 footer-services">
+                        <h4>
+                            Our Services
+                        </h4>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    Web Design
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Web Development
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Product Management
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Marketing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Graphic Design
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-12 text-md-start text-center footer-contact">
+                        <h4>
+                            Contact Us
+                        </h4>
+                        <p>A108 Adam Street</p>
+                        <p>New York, NY 535022</p>
+                        <p>United States</p>
+                        <div class="contact-links">
+                            <p>
+                                <strong>Phone:</strong>
+                                <span>+1 5589 55488 55</span>
+                            </p>
+                            <p>
+                                <strong>Email:</strong>
+                                <span>info@example.com</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyrights">
+                <p class="copyright">
+                    &copy; Copyright <strong class="px-1">Shuffle</strong> All Rights Reserved
+                </p>
+                <p class="credits">
+                    Designed by <a href="">BootstrapMade</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Script -->
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script>
+        new PureCounter();
+    </script>
+</body>
+
+</html>

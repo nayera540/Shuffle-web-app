@@ -1,0 +1,24 @@
+// colors
+$primaryColor: #1bbca3;
+$headingColor: #384f4b;
+$defaultColor: #444444;
+$overlay: color-mix(in srgb, #0e1a18, transparent 30%);
+$primaryColorHover: color-mix(in srgb, #1bbca3, transparent 20%);
+$footerPrimaryColor: #0e1a18;
+$footerSecondaryColor: #1a2624;
+
+
+// fonts
+$headingFont: "Inter", sans-serif;
+$navFont: Poppins, sans-serif;
+$defaultFont: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+// font weight
+$headingFontWeight: 700;
+$defaultFontWeight: 400;
+$btnFontWeight: 500;
+
+// border radius
+$roundedPill: 3.125rem;
+$rounded: 5px;
+

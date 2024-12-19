@@ -1,0 +1,48 @@
+
+
+.about-description{
+    h3{
+        font-size: 2rem;
+    }
+    ul{
+        margin-bottom: 2rem;
+    }
+    li{
+        color: $defaultColor;
+        margin-bottom: 0.625rem;
+
+        i{
+            color: $primaryColor;
+            font-size: 1.25rem;
+            margin-right: 0.25rem;
+        }
+    }
+}
+
+.read-more{
+    @include button(
+        $bgColor: $primaryColor,
+        $fontFamily: $headingFont,
+        $letterSpacing: 1px,
+        $fontWeight: $btnFontWeight,
+        $paddingX: 1.5rem,
+        $paddingY: 0.75rem,
+        $borderRadius: $rounded
+    );
+
+    @include btn-hover(color-mix(in srgb, $primaryColor, black 20%));
+
+    &:hover{
+        color: #fff;
+        i{
+            transform: translateX(5px);
+        }
+    }
+
+    i{
+        
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
+
+}
